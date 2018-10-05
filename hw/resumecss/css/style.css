@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Roboto');
 
 
+header{
+  background-color: green;
+}
 
+main{
+  background-color: orange;
+}
 
-
+footer{
+  background-color: white;
+}
 
 body{
   background-color: orange;
