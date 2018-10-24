@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 header {
-    width: 100%;
-    height: 100px;
+    width: 80%;
+    height: 80%;
     background-color:gainsboro;
     margin: 0 auto;
     font-family: Cinzel;
@@ -33,16 +33,16 @@ nav ul li a:hover{
 }
 
 main {
-    width: 100%;
-    height: 600px;
+    width: 80%;
+    height: 80;
     background-color: mistyrose;
     margin: 0 auto;
     font-family: Cinzel;
 }
 
 footer {
-    width: 100%;
-    height: 50px;
+    width: 80%;
+    height: 80%;
     background-color: gainsboro;
     margin: 0 auto;
     font-family: Cinzel;

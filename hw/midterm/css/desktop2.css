@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+header {
+    width: 90%;
+    height: 90%;
+    background-color:gainsboro;
+    margin: 0 auto;
+    font-family: Cinzel;
+  }
+
+  nav{
+    width: 90%;
+    height: 90%;
+  }
+
+  nav ul{
+    margin-left: -10px;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 200px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+
+  nav ul li a:hover{
+    background-color: pink;
+  }
+main {
+    width: 90%;
+    height: 90%;
+    background-color: mistyrose;
+    margin: 0 auto;
+    font-family: Cinzel;
+}
+
+footer {
+    width: 90%;
+    height: 90%;
+    background-color:gainsboro;
+    margin: 0 auto;
+    font-family: Cinzel;
+}
+
+
+#grid1{
+  display: grid;
+  grid-template-areas: "col1 col2 col3 col4 col5";
+  grid-template-rows: 1fr;
+  grid-template-columns: 10% 10% 10% 10% 10%;
+  text-align: center;
+}
