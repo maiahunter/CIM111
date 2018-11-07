@@ -1,54 +1,101 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
   <head>
-    <style>
-
-    </style>
-
+    <title>how to make hot chocolate</title>
+    <link rel="stylesheet" href="/Users/maiahunter/Desktop/CIM111/hw/howto/style.css">
   </head>
   <body>
+    <header>
+      <h1>how to make hot chocolate</h1>
+      <em>maia hunter, CIM111-S</em>
+    </header>
+    <main>
+      <p id="info">mouse over to enlarge photos</p>
+      <br></br>
+      <section id="grid1">
+        <div id="col1">step 1</div>
+        <div id="col2">step 2</div>
+        <div id="col3">step 3</div>
+        <div id="col4">step 4</div>
+        <div id="col5">step 5</div>
+      </section>
+      <section id="grid2">
+        <div id="col6">
+          <img class="images" src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img1.jpg" width="100">
+        </div>
+        <div id="col7">
+          <img class="images" src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img2.jpg" width="100">
+        </div>
+        <div id="col8">
+          <img class="images" src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img3.jpg"width="100">
+        </div>
+        <div id="col9">
+          <img class="images" src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img4.jpg" width="100">
+        </div>
+        <div id="col10">
+          <img class="images" src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img5.jpg" width="100">
+        </div>
+        <div id="imageRecepticle"></div>
+      </section>
 
-    <h1 id="textChange">how to make cookies</h1>
-    <h2>the recipe:</h2>
-    <h3>pre-heat oven to 350 degrees</h3>
-    <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Toaster_oven.jpg"width=100>
-    <h3>open packaging</h3>
-    <img id="image2"src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Chocolate_Chip_Cookies_-_kimberlykv.jpg"width=100>
-    <h3>put each pre-broken piece on pan</h3>
-    <img id="image3" src="https://cdn.pixabay.com/photo/2016/03/18/02/16/cookies-1264263_960_720.jpg"width=100>
-    <h3>put pan in oven</h3>
-    <img id="image4"src="https://media.defense.gov/2008/Dec/17/2000649017/780/780/0/081216-F-1103D-110.JPG"width=100>
-    <h3>take pan out of oven</h3>
-    <img id="image5" src="https://media.defense.gov/2008/Dec/17/2000649209/-1/-1/0/081208-F-1142C-014.JPG"width=100>
-    <div id="imageRecepticle"></div>
-    <script src="jquery-3.3.1.min.js"></script>
+      <section id="grid3">
+        <div id="col11">pour milk or milk substitute into mug</div>
+        <div id="col12">heat milk or milk substitute in microwave</div>
+        <div id="col13">open package of powdered chocolate</div>
+        <div id="col14">pour package of powdered chocolate into mug</div>
+        <div id="col15">stir until throughly mixed</div>
+      </section>
+      <br></br>
 
-    <script>
-    $(document).ready(function(){
+      <p id="toggle">click to toggle nutritional facts</p>
 
-      $("#image1").click(function(){
-        $("#imageRecepticle").html('<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Toaster_oven.jpg" width="300">')
-      })
-
-      $("#image2").click(function(){
-        $("#imageRecepticle").html('<img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Chocolate_Chip_Cookies_-_kimberlykv.jpg" width="300">')
-      })
-
-      $("#image3").click(function(){
-        $("#imageRecepticle").html('<img src="https://cdn.pixabay.com/photo/2016/03/18/02/16/cookies-1264263_960_720.jpg" width="300">')
-      })
-
-      $("#image4").click(function(){
-        $("#imageRecepticle").html('<img src="https://media.defense.gov/2008/Dec/17/2000649017/780/780/0/081216-F-1103D-110.JPG" width="300">')
-      })
-
-      $("#image5").click(function(){
-        $("#imageRecepticle").html('<img src="https://media.defense.gov/2008/Dec/17/2000649209/-1/-1/0/081208-F-1142C-014.JPG" width="300">')
-      })
-    })
+      <div id="box">
+      90 calories <br></br> 2g fat <br></br> 11g sugar <br></br> 16g carbohydrates
+      </div>
 
 
-    </script>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script>
+      $(document).ready(function(){
+        $("#col6").mouseenter(function(){
+          $("#imageRecepticle").html('<img src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img1.jpg" width="300">')
+        });
+        $("#col6").mouseleave(function(){
+          $("#imageRecepticle").html("");
+        });
+        $("#col7").mouseenter(function(){
+          $("#imageRecepticle").html('<img src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img2.jpg" width="300">')
+        });
+        $("#col7").mouseleave(function(){
+          $("#imageRecepticle").html("");
+        });
+        $("#col8").mouseenter(function(){
+          $("#imageRecepticle").html('<img src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img3.jpg" width="300">')
+        });
+        $("#col8").mouseleave(function(){
+          $("#imageRecepticle").html("");
+        });
+        $("#col9").mouseenter(function(){
+          $("#imageRecepticle").html('<img src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img4.jpg" width="300">')
+        });
+        $("#col9").mouseleave(function(){
+          $("#imageRecepticle").html("");
+        });
+        $("#col10").mouseenter(function(){
+          $("#imageRecepticle").html('<img src="/Users/maiahunter/Desktop/CIM111/hw/howto/images/img5.jpg" width="300">')
+        });
+        $("#col10").mouseleave(function(){
+          $("#imageRecepticle").html("");
+        });
+        $("#toggle").click(function(){
+          $("#box").toggle(1000);
+        });
+      });
+      </script>
+
+    </main>
+    <footer></footer>
   </body>
 </html>
