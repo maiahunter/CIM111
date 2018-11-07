@@ -3,9 +3,38 @@
 <html>
   <head>
     <title>Intro to JavaScript</title>
+
+    <style>
+      .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
     <h1 id="textChange">Intro to JavaScript</h1>
+
+    <h2 id="info">Mouse over to see more info</h2>
+    <div id="recepticle"></div>
+
+    <h2>Click to view images</h2>
+    <img id="image1" src="https://c1.staticflickr.com/5/4041/4259490417_049c153dfb_b.jpg" width="100">
+    <img id="image2" src="https://torange.biz/photo/43/IMAGE/snow-snowmen-snowman-43056.jpg" width="100">
+    <div id="imageRecepticle"></div>
+
+    <ul>
+      <li id="show">Show</li>
+      <li id="hide">Hide</li>
+      <li id="toggle">Toggle</li>
+    </ul>
+
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+
     <!--Local jquery script-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!--Remote version-->
@@ -14,6 +43,9 @@
     <script>
     $(document).ready(function(){
       //ALL jquery code should be placed below
+
+      $(".box").hide();
+
       $("body").css("background-color", "purple");
       $("h1").css ("color","white");
       $("h1").css("font-size","40px");
@@ -26,6 +58,36 @@
 
 
       });//End of textChange click
+
+      $("#info").mouseenter(function(){
+        $("#recepticle").html("<em> This information is important.</em>");
+        $("#info").css("background-color", "blue");
+      });
+
+      $("#info").mouseleave(function(){
+        $("#recepticle").html("");
+        $("#info").css("background-color","transparent");
+      });
+
+      $("#image1").click(function(){
+        $("#imageRecepticle").html('<img src="https://c1.staticflickr.com/5/4041/4259490417_049c153dfb_b.jpg" width="300">')
+      })
+
+      $("#image2").click(function(){
+        $("#imageRecepticle").html('<img src="https://torange.biz/photo/43/IMAGE/snow-snowmen-snowman-43056.jpg" width="300">')
+      })
+
+      $("#hide").click(function(){
+        $(".box").hide();
+      });
+
+      $("#show").click(function(){
+        $(".box").show();
+      });
+
+      $("#toggle").click(function(){
+        $(".box").toggle(1000);
+      });
 
     });//End of document ready
 

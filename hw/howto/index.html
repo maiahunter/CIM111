@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1 id="textChange">how to make cookies</h1>
+    <h2>the recipe:</h2>
+    <h3>pre-heat oven to 350 degrees</h3>
+    <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Toaster_oven.jpg"width=100>
+    <h3>open packaging</h3>
+    <img id="image2"src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Chocolate_Chip_Cookies_-_kimberlykv.jpg"width=100>
+    <h3>put each pre-broken piece on pan</h3>
+    <img id="image3" src="https://cdn.pixabay.com/photo/2016/03/18/02/16/cookies-1264263_960_720.jpg"width=100>
+    <h3>put pan in oven</h3>
+    <img id="image4"src="https://media.defense.gov/2008/Dec/17/2000649017/780/780/0/081216-F-1103D-110.JPG"width=100>
+    <h3>take pan out of oven</h3>
+    <img id="image5" src="https://media.defense.gov/2008/Dec/17/2000649209/-1/-1/0/081208-F-1142C-014.JPG"width=100>
+    <div id="imageRecepticle"></div>
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+      $("#image1").click(function(){
+        $("#imageRecepticle").html('<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Toaster_oven.jpg" width="300">')
+      })
+
+      $("#image2").click(function(){
+        $("#imageRecepticle").html('<img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Chocolate_Chip_Cookies_-_kimberlykv.jpg" width="300">')
+      })
+
+      $("#image3").click(function(){
+        $("#imageRecepticle").html('<img src="https://cdn.pixabay.com/photo/2016/03/18/02/16/cookies-1264263_960_720.jpg" width="300">')
+      })
+
+      $("#image4").click(function(){
+        $("#imageRecepticle").html('<img src="https://media.defense.gov/2008/Dec/17/2000649017/780/780/0/081216-F-1103D-110.JPG" width="300">')
+      })
+
+      $("#image5").click(function(){
+        $("#imageRecepticle").html('<img src="https://media.defense.gov/2008/Dec/17/2000649209/-1/-1/0/081208-F-1142C-014.JPG" width="300">')
+      })
+    })
+
+
+    </script>
+
+  </body>
+</html>
