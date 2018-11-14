@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:300');
+
+header{
+  background-color: lavenderblush;
+  text-align: center;
+  height: auto;
+  font-family: 'Lora', serif;
+  width: 100%;
+  height: 100px;
+}
+main{
+  background-color: mistyrose;
+  height: auto;
+  font-family: 'Lora', serif;
+  width: 100%;
+  height: 600px;
+}
+footer{
+  background-color: lavenderblush;
+  height: auto;
+  font-family: 'Lora', serif;
+  width: 100%;
+  height: 200px;
+}
