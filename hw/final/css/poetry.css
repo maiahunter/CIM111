@@ -1,1 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|EB+Garamond|Noto+Serif+SC|Playfair+Display|Prata|Sorts+Mill+Goudy');
+
+body{
+  font-family: 'EB Garamond', serif;
+  background-color: darkseagreen;
+}
+
+nav{
+  width: 100%;
+  height: 0 auto;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav ul li a:hover{
+  background-color: burlywood;
+}
+#h1{
+  text-align: center;
+}
+#grid1{
+  display: grid;
+  grid-template-areas: "col1 col2";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+#col1{
+  grid-area: col1;
+  height: auto;
+}
+#col2{
+  grid-area: col2;
+  height: auto;
+}
